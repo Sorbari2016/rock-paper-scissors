@@ -51,6 +51,8 @@ function playGame() {
         }
 
         const computerChoice = getComputerChoice();
+        console.log(`Computer's choice: ${computerChoice}`); // Display computer's choice
+        
         const result = playRound(humanChoice, computerChoice);
 
         if (result === null) {
