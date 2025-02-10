@@ -58,11 +58,31 @@ function handleUserChoice(choice) {
         document.getElementById("rock").disabled = true;
         document.getElementById("paper").disabled = true;
         document.getElementById("scissors").disabled = true;
+
+        // Show restart button
+        document.getElementById("restart").style.display = "block";
     }
+}
+
+// Function to restart the game
+function restartGame() {
+    humanScore = 0;
+    computerScore = 0;
+
+    document.getElementById("result").textContent = "Make your choice!";
+    document.getElementById("score").textContent = "Score - You: 0, Computer: 0";
+
+    // Re-enable buttons
+    document.getElementById("rock").disabled = false;
+    document.getElementById("paper").disabled = false;
+    document.getElementById("scissors").disabled = false;
+
+    // Hide the restart button
+    document.getElementById("restart").style.display = "none";
 }
 
 // Add event listeners to buttons
 document.getElementById("rock").addEventListener("click", () => handleUserChoice("rock"));
 document.getElementById("paper").addEventListener("click", () => handleUserChoice("paper"));
 document.getElementById("scissors").addEventListener("click", () => handleUserChoice("scissors"));
-
+document.getElementById("restart").addEventListener("click", restartGame);
