@@ -1,8 +1,8 @@
 // To get computer choice
 function getComputerChoice() {
     const choices = ["rock", "paper", "scissors"];
-    const randomIndex = Math.floor(Math.random() * choices.length);
-    return choices[randomIndex];
+    const randomIndex = Math.floor(Math.random() * choices.length); //generate a random number between 0 & 2
+    return choices[randomIndex]; // return any of the choices based on a random index of 0, 1, or 2 generated
 }
 
 // Function to play a single round
@@ -24,8 +24,8 @@ function playRound(humanChoice, computerChoice) {
 let humanScore = 0;
 let computerScore = 0;
 
-// Function to handle button clicks
-function handleUserChoice(choice) {
+// Function to handle button clicks, & obtain the user's choice
+function getHumanChoice(choice) {
     const computerChoice = getComputerChoice();
     const result = playRound(choice, computerChoice);
 
@@ -82,7 +82,7 @@ function restartGame() {
 }
 
 // Add event listeners to buttons
-document.getElementById("rock").addEventListener("click", () => handleUserChoice("rock"));
-document.getElementById("paper").addEventListener("click", () => handleUserChoice("paper"));
-document.getElementById("scissors").addEventListener("click", () => handleUserChoice("scissors"));
+document.getElementById("rock").addEventListener("click", () => getHumanChoice("rock"));
+document.getElementById("paper").addEventListener("click", () => getHumanChoice("paper"));
+document.getElementById("scissors").addEventListener("click", () => getHumanChoice("scissors"));
 document.getElementById("restart").addEventListener("click", restartGame);
