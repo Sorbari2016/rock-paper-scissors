@@ -31,3 +31,6 @@
 4. Compare the scores:	If humanChoice beats computerChoice, increment humanScore by 1 and display "You won this round". Else if computerChoice beats humanChoice, increment computerScore by 1 and display "Computer won this round"
 5. Increment round by 1 after each round until the 5th round.
 6. After the 5th round compare humanScore and computerScore: if humanScore > computerScore display "You won the game". Else if computerScore > humanScore display "Computer won the game"
+
+## Check out the Game 
+[Play the game here](http://sorbari2016.github.io/rock-paper-scissors/) 
