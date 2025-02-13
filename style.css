@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: 'Press Start 2P', cursive; /* Retro game-style font */
+    font-size: 16px;
+    color: #fff; /* White text */
+    text-align: center; /* Center align text */
+    background-color: #222; /* Dark background for contrast */
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif; /* Futuristic and stylish */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00; /* Bright yellow for emphasis */
+    text-shadow: 3px 3px 0px #ff4500, 5px 5px 5px rgba(0, 0, 0, 0.5); /* Cool glowing effect */
+    margin-bottom: 50px;
+    margin-top:10px
+}
+
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #ff4500; /* Bright orange for game vibe */
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 80px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
