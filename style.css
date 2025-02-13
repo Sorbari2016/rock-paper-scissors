@@ -40,7 +40,18 @@ button {
 
 #container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* To make the buttons orient vertically */
     gap: 10px;
     align-items: center;
 }
+
+
+#restart {
+    padding: 10px 20px;
+    border: none;
+    background-color: gray; /* Change to your preferred color */
+    color: black;
+    cursor: pointer;
+    display: none; /* Keeps it hidden initially */
+  }
+  
