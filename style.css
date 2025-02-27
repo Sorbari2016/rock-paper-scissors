@@ -17,8 +17,8 @@ h1{
     font-family: 'Orbitron', sans-serif; /* Futuristic and stylish */
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffcc00; /* Bright yellow for emphasis */
-    text-shadow: 3px 3px 0px #ff4500, 5px 5px 5px rgba(0, 0, 0, 0.5); /* Cool glowing effect */
+    color: #DD88CF; /* Bright yellow for emphasis */
+    text-shadow: 3px 3px 0px #4B164C, 5px 5px 5px rgba(0, 0, 0, 0.5); /* Cool glowing effect */
     margin-bottom: 50px;
     margin-top:10px
 }
@@ -29,13 +29,17 @@ button {
     font-size: 14px;
     padding: 10px 20px;
     border: none;
-    background-color: #ff4500; /* Bright orange for game vibe */
+    background-color: #DD88CF;
     color: #fff;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
     width: 80px;
     border-radius: 5px;
     font-weight: 800;
+}
+
+button:hover {
+    background-color: #493D9E;
 }
 
 #container {
